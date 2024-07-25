@@ -2059,19 +2059,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/bintang/.nuget/packages/": {}
+    "C:\\Users\\ASUS\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/bintang/Documents/Project Programming/Pertamina/Intranet/Intranet.csproj",
+      "projectUniqueName": "C:\\Users\\ASUS\\Intranet-RU-VI\\Intranet.csproj",
       "projectName": "Intranet",
-      "projectPath": "/Users/bintang/Documents/Project Programming/Pertamina/Intranet/Intranet.csproj",
-      "packagesPath": "/Users/bintang/.nuget/packages/",
-      "outputPath": "/Users/bintang/Documents/Project Programming/Pertamina/Intranet/obj/",
+      "projectPath": "C:\\Users\\ASUS\\Intranet-RU-VI\\Intranet.csproj",
+      "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ASUS\\Intranet-RU-VI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/bintang/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -2144,7 +2144,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.302/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {
