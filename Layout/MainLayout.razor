@@ -1,16 +1,31 @@
 ﻿@inherits LayoutComponentBase
-<div class="page">
-    <div class="sidebar">
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        * {
+            border: 1px solid white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="p-5 bg-info">
         <NavMenu />
-    </div>
-
-    <main>
-        <div class="top-row px-4">
-            <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">Logout</a>
+        <div class="d-flex">
+            <div class="col-10">
+                @Body
+            </div>
+            <div class="col-2 bg-white">
+                <SideMenu />
+            </div>
         </div>
+    </div>
+</body>
 
-        <article class="content px-4">
-            @Body
-        </article>
-    </main>
-</div>
+</html>
