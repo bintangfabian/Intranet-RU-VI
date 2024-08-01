@@ -8,25 +8,23 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div class="page">
+    <div class="page"></div>
     <div class="Sidebar">
         <NavMenu />
-    </div>
-
-    <main>
-        <div class="top-row col-9 px-4 bg-danger mb-5">
-            <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
+        <div class="d-flex">
+            <div class="col-9">
+                @Body
+            </div>
+            <div class="col-2 bg-white">
+                <SideMenu />
+            </div>
         </div>
-
-        <article class="content px-4">
-            @Body
-        </article>
-    </main>
-</div>
-        
-        <script src="" async defer></script>
-    </body>
+    </div>
+</body>
 </html>
 

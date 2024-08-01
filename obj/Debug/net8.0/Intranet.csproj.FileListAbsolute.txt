@@ -2061,3 +2061,4 @@ C:\Users\ASUS\Intranet-RU-VI\obj\Debug\net8.0\Intranet.dll
 C:\Users\ASUS\Intranet-RU-VI\obj\Debug\net8.0\refint\Intranet.dll
 C:\Users\ASUS\Intranet-RU-VI\obj\Debug\net8.0\Intranet.pdb
 C:\Users\ASUS\Intranet-RU-VI\obj\Debug\net8.0\ref\Intranet.dll
+C:\Users\ASUS\Intranet-RU-VI\obj\Debug\net8.0\scopedcss\Layout\SideMenu.razor.rz.scp.css

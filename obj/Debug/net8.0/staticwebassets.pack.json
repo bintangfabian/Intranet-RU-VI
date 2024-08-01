@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\Intranet.styles.css"
     },
     {
+      "Id": "C:\\Users\\ASUS\\Intranet-RU-VI\\wwwroot\\cobacoba.jpg",
+      "PackagePath": "staticwebassets\\cobacoba.jpg"
+    },
+    {
       "Id": "C:\\Users\\ASUS\\Intranet-RU-VI\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },
@@ -27,6 +31,18 @@
     {
       "Id": "C:\\Users\\ASUS\\Intranet-RU-VI\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\ASUS\\Intranet-RU-VI\\wwwroot\\gambarhome.jpg",
+      "PackagePath": "staticwebassets\\gambarhome.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ASUS\\Intranet-RU-VI\\wwwroot\\gambarhome2.jpg",
+      "PackagePath": "staticwebassets\\gambarhome2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ASUS\\Intranet-RU-VI\\wwwroot\\gambarhome3.png",
+      "PackagePath": "staticwebassets\\gambarhome3.png"
     },
     {
       "Id": "C:\\Users\\ASUS\\Intranet-RU-VI\\wwwroot\\icon-192.png",

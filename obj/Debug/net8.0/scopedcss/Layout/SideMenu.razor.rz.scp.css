@@ -1,0 +1,73 @@
+.sidebar-content[b-60j33szu7j] {
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 20rem;
+  height: max-content;
+}
+
+.sidebar-section[b-60j33szu7j] {
+  margin-bottom: 20px;
+}
+
+.section-title[b-60j33szu7j] {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.announcement-list[b-60j33szu7j],
+.important-contacts[b-60j33szu7j] {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.announcement-list li[b-60j33szu7j],
+.important-contacts li[b-60j33szu7j] {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.announcement-list li a[b-60j33szu7j],
+.important-contacts li span[b-60j33szu7j] {
+  color: #333;
+  text-decoration: none;
+}
+
+.btn-primary[b-60j33szu7j] {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.video-thumbnail[b-60j33szu7j] {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  background: url("path/to/video_thumbnail.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.play-button[b-60j33szu7j] {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+}
