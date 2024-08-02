@@ -33,6 +33,14 @@
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
+      "Id": "C:\\Users\\ASUS\\Intranet-RU-VI\\wwwroot\\gambarberita1.jpg",
+      "PackagePath": "staticwebassets\\gambarberita1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ASUS\\Intranet-RU-VI\\wwwroot\\gambarberita2.jpg",
+      "PackagePath": "staticwebassets\\gambarberita2.jpg"
+    },
+    {
       "Id": "C:\\Users\\ASUS\\Intranet-RU-VI\\wwwroot\\gambarhome.jpg",
       "PackagePath": "staticwebassets\\gambarhome.jpg"
     },
