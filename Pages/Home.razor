@@ -60,7 +60,7 @@
 <!-- Berita Terkini Section End -->
 
 <!-- Berita Lainnya Section -->
-<div class="container mt-4">
+<div class="container mt-4 px-4 py-4">
   <h5 class="mb-4 fw-bold">BERITA LAINYA</h5>
   <div class="row">
     <div class="col-md-12 mb-4">
@@ -116,23 +116,23 @@
 <!-- Berita Lainnya Section End -->
 
 <!-- Forum Section -->
-<div class="container mt-4">
+<div class="container mt-4 bg-sekunder">
   <h3 class="mb-4">FORUM ADA APA DENGAN KITA/A2DK</h3>
   <h4 class="mb-4">Thread Terbaru</h4>
   <div class="list-group">
-    <div class="list-group-item">
+    <div class="list-group-item mb-4 shadow p-3 mb-5 bg-secondary rounded">
       <h5 class="mb-1">Ahmad Sanusi</h5>
       <p class="mb-1">Apa bedanya kerja sama pengangguran? coba difleksi dong dek</p>
       <small class="text-muted">4 Replies - 200 views</small>
       <small class="text-muted float-end">Last Post : by Rudi Winama 20 Des 2023</small>
     </div>
-    <div class="list-group-item">
+    <div class="list-group-item mb-4 shadow p-3 mb-5 bg-white rounded">
       <h5 class="mb-1">Ahmad Sanusi</h5>
       <p class="mb-1">Apa bedanya kerja sama pengangguran? coba difleksi dong dek</p>
       <small class="text-muted">4 Replies - 200 views</small>
       <small class="text-muted float-end">Last Post : by Rudi Winama 20 Des 2023</small>
     </div>
-    <div class="list-group-item">
+    <div class="list-group-item mb-4 shadow p-3 mb-5 bg-light rounded">
       <h5 class="mb-1">Ahmad Sanusi</h5>
       <p class="mb-1">Apa bedanya kerja sama pengangguran? coba difleksi dong dek</p>
       <small class="text-muted">4 Replies - 200 views</small>
@@ -141,4 +141,69 @@
   </div>
   <button class="btn btn-primary mt-3 float-end">Selengkapnya ></button>
 </div>
+
+@* <div class="container">
+    <h1>Thread Terbaru</h1>
+    @foreach (var thread in threads)
+    {
+        <div class="thread">
+            <h2>@thread.Author</h2>
+            <p>@thread.Content</p>
+            <div class="thread-footer">
+                <span class="replies">@thread.Replies Replies</span>
+                <span class="views">@thread.Views</span>
+                <span class="date">@thread.Date.ToString("dd MMM yyyy")</span>
+                <span class="last-post">Last Post: By @thread.LastPostBy @thread.LastPostDate.ToString("dd MMM yyyy")</span>
+            </div>
+        </div>
+    }
+    <button class="more-button">Selengkapnya</button>
+</div>
+
+@code {
+    private List<ThreadModel> threads = new List<ThreadModel>
+    {
+        new ThreadModel
+        {
+            Author = "Ahmad Sanusi",
+            Content = "Apa bedanya kerja sama pengangguran? coba ditebak dong dek",
+            Replies = 4,
+            Views = 200,
+            Date = new DateTime(2024, 9, 27),
+            LastPostBy = "Rizki Permana",
+            LastPostDate = new DateTime(2025, 12, 20)
+        },
+        new ThreadModel
+        {
+            Author = "Ahmad Sanusi",
+            Content = "Apa bedanya kerja sama pengangguran? coba ditebak dong dek",
+            Replies = 4,
+            Views = 200,
+            Date = new DateTime(2024, 9, 27),
+            LastPostBy = "Rizki Permana",
+            LastPostDate = new DateTime(2025, 12, 20)
+        },
+        new ThreadModel
+        {
+            Author = "Ahmad Sanusi",
+            Content = "Apa bedanya kerja sama pengangguran? coba ditebak dong dek",
+            Replies = 4,
+            Views = 200,
+            Date = new DateTime(2024, 9, 27),
+            LastPostBy = "Rizki Permana",
+            LastPostDate = new DateTime(2025, 12, 20)
+        }
+    };
+
+    private class ThreadModel
+    {
+        public string Author { get; set; }
+        public string Content { get; set; }
+        public int Replies { get; set; }
+        public int Views { get; set; }
+        public DateTime Date { get; set; }
+        public string LastPostBy { get; set; }
+        public DateTime LastPostDate { get; set; }
+    }
+} *@
 <!-- Forum Section End -->

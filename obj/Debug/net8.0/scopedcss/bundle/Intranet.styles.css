@@ -260,3 +260,71 @@ ul.navbar-nav.mb-2.mb-md-0.mx-5[b-cvhkh149jr] {
   color: white;
   cursor: pointer;
 }
+/* /Pages/Home.razor.rz.scp.css */
+.list-group-item[b-jem09xfzag] {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: grey;
+}
+
+/* body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.thread {
+  border: 1px solid #ddd;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.thread h2 {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+
+.thread p {
+  margin: 0 0 10px;
+  font-size: 16px;
+}
+
+.thread-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #888;
+}
+
+.more-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+
+.more-button:hover {
+  background-color: #0056b3;
+} */
