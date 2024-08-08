@@ -3,6 +3,10 @@
   background-color: grey;
 }
 
+span {
+  color: blue;
+}
+
 /* body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
