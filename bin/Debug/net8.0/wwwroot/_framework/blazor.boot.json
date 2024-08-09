@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "Intranet",
   "resources": {
-    "hash": "sha256-7RdS92LSZ3dvzX5R6tpLkkBf4cxodooxOnM3sUQkBFY=",
+    "hash": "sha256-p6xb5r3DqiV51XFrnbBlH/NdBGY6ybj22ZFUa4SBq6s=",
     "jsModuleNative": {
       "dotnet.native.8.0.6.e43ixpkh08.js": "sha256-YU6M9+jtDVnB8/wtrgIndOstzNh778Ls8g9XnbjorSk="
     },
@@ -208,10 +208,10 @@
       "mscorlib.wasm": "sha256-masKveCdoRSahF99doEQk7H3YN2wHLVIE4M/Zu8OoD8=",
       "netstandard.wasm": "sha256-z1EJOmgVhSpTopn7Tek/0P//MKGF1I3NUD/sh4oLnwY=",
       "System.Private.CoreLib.wasm": "sha256-tuIWpR30u0OoEVtv4pXZ47mEpI2AmFBIyYFPnqDZZfw=",
-      "Intranet.wasm": "sha256-Zd9vD65R5SjsG7SWIQztBdHXx6O4jwnzR/Ymf63e+Ho="
+      "Intranet.wasm": "sha256-QLjeQutpAzllXbmhBTi2+jnjA1xAKR+PuaRfdtW4khA="
     },
     "pdb": {
-      "Intranet.pdb": "sha256-iOwnfgR3bG3r4pj9yftguk44Xnn4ULbUg8tm7vtlInw="
+      "Intranet.pdb": "sha256-R6X/5kXwiyOEdM27sSjS8hb0tDrmi2C9beBh6yjxM30="
     }
   },
   "cacheBootResources": true,
