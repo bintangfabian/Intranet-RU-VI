@@ -232,7 +232,62 @@
         </ul>
         <button class="btn btn-primary">Selengkapnya</button>
     </div>
+
+    @* <div class="sidebar-content">
+    <!-- Announcements Section -->
+    <div class="sidebar-section mx-4 my-4">
+        <h5 class="section-title">PENGUMUMAN</h5>
+        <ul class="announcement-list">
+            <li>
+                <span class="date border-left">Hari ini</span>
+                <a href="#">Memperingati hari kemerdekaan Indonesia yang ke-89</a>
+            </li>
+            <li>
+                <span class="date border-left">21 Juni 2024</span>
+                <a href="#">Memperingati hari kemerdekaan Indonesia yang ke-89</a>
+            </li>
+            <li>
+                <span class="date">21 Juni 2024</span>
+                <a href="#">Memperingati hari kemerdekaan Indonesia yang ke-89</a>
+            </li>
+            <li>
+                <span class="date">21 Juni 2024</span>
+                <a class="border-left" href="#">Memperingati hari kemerdekaan Indonesia yang ke-89</a>
+            </li>
+            <li>
+                <span class="date">21 Juni 2024</span>
+                <a href="#">Memperingati hari kemerdekaan Indonesia yang ke-89</a>
+            </li>
+            <li>
+                <span class="date">21 Juni 2024</span>
+                <a href="#">Memperingati hari kemerdekaan Indonesia yang ke-89</a>
+            </li>
+        </ul>
+        <button class="btn btn-primary btn-selengkapnya">Selengkapnya</button>
+    </div>
+</div> *@
+
     
+    @* AnnouncementSidebar.razor *@
+@* <div class="sidebar-announcement">
+    <h3>PENGUMUMAN</h3>
+    <ul>
+        <li>
+            <span class="date">Hari ini</span>
+            <span class="content">Memperingati hari kemerdekaan Indonesia yang ke-89</span>
+        </li>
+        @for (int i = 0; i < 6; i++)
+        {
+            <li>
+                <span class="date">21 Juni 2024</span>
+                <span class="content">Memperingati hari kemerdekaan Indonesia yang ke-89</span>
+            </li>
+        }
+    </ul>
+    <button class="more-info">Selengkapnya <i class="fas fa-arrow-right"></i></button>
+</div> *@
+
+
     <!-- Supporting Information Section -->
     <div class="sidebar-section mx-4 my-4">
         <h5 class="section-title">INFORMASI PENDUKUNG</h5>
@@ -274,4 +329,32 @@
             <button class="play-button"><i class="fas fa-play"></i></button>
         </div>
     </div>
+<!-- Pejabat Sementara Section -->
+    <div class="sidebar-section">
+        <h5 class="section-title">PEJABAT SEMENTARA</h5>
+        <div class="card profile-card">
+            <img src="path/to/manager_image.jpg" alt="Vincent Rompis" class="profile-image"/>
+            <div class="profile-details">
+                <h6>Vincent Rompis</h6>
+                <p>General Manager RU VI</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ulang Tahun Pekerja Section -->
+    <div class="sidebar-section">
+        <h5 class="section-title">ULANG TAHUN PEKERJA</h5>
+        <div class="card profile-card">
+            <img src="path/to/employee_image.jpg" alt="Lamine Yamal" class="profile-image"/>
+            <div class="profile-details">
+                <h6>Lamine Yamal</h6>
+                <p>Operator | Gas Product & Jetty</p>
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="btn btn-success">Beri Ucapan</button>
+            <button class="btn btn-primary">Selengkapnya</button>
+        </div>
+    </div>
 </div>
+
