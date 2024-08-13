@@ -1,4 +1,4 @@
-/* .sidebar-content {
+.sidebar-content {
   padding: 10px;
   background-color: #fff;
   border-radius: 8px;
@@ -70,10 +70,10 @@
   padding: 10px;
   color: white;
   cursor: pointer;
-} */
+}
 
 /* Custom CSS */
-.sidebar-content {
+/* .sidebar-content {
   background-color: #fff;
   padding: 20px;
   border-radius: 8px;
@@ -105,7 +105,7 @@
 
 .announcement-list li a {
   color: #a8db00; /* Green color */
-  text-decoration: none;
+/* text-decoration: none;
   font-size: 14px;
 }
 
@@ -128,4 +128,4 @@
 
 .btn-selengkapnya:hover {
   background-color: #0056b3;
-}
+} */

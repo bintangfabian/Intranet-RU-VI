@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "h/n6Pa7tdTJxOgbuMyNVrnJLxF3KZhw+Rt2h7II57qo=",
+  "Hash": "5P5zCEMFrRUhXZi3s93+NgBm+JicLswU5Xdht3ObB/A=",
   "Source": "Intranet",
   "BasePath": "/",
   "Mode": "Root",
@@ -8204,6 +8204,44 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\sample-data\\weather.json"
+    },
+    {
+      "Identity": "C:\\Users\\ASUS\\Intranet-RU-VI\\wwwroot\\side.jpg",
+      "SourceId": "Intranet",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ASUS\\Intranet-RU-VI\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "side.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\side.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ASUS\\Intranet-RU-VI\\wwwroot\\side2.jpg",
+      "SourceId": "Intranet",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ASUS\\Intranet-RU-VI\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "side2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\side2.jpg"
     }
   ]
 }
