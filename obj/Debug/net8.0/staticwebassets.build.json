@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "5P5zCEMFrRUhXZi3s93+NgBm+JicLswU5Xdht3ObB/A=",
+  "Hash": "b2ILS4rufAW/NEHhyo39yPOy0pc5EJzgQChIZHZ3e9g=",
   "Source": "Intranet",
   "BasePath": "/",
   "Mode": "Root",
@@ -8187,6 +8187,25 @@
       "OriginalItemSpec": "wwwroot\\logopertamina.png"
     },
     {
+      "Identity": "C:\\Users\\ASUS\\Intranet-RU-VI\\wwwroot\\pejabat.jpg",
+      "SourceId": "Intranet",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ASUS\\Intranet-RU-VI\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "pejabat.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\pejabat.jpg"
+    },
+    {
       "Identity": "C:\\Users\\ASUS\\Intranet-RU-VI\\wwwroot\\sample-data\\weather.json",
       "SourceId": "Intranet",
       "SourceType": "Discovered",
@@ -8223,25 +8242,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\side.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\ASUS\\Intranet-RU-VI\\wwwroot\\side2.jpg",
-      "SourceId": "Intranet",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\Intranet-RU-VI\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "side2.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\side2.jpg"
     }
   ]
 }

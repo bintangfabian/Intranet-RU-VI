@@ -35,7 +35,7 @@
 
 .announcement-list li a,
 .important-contacts li span {
-  color: #333;
+  color: #a8db00;
   text-decoration: none;
 }
 
@@ -54,9 +54,10 @@
 .video-thumbnail {
   position: relative;
   width: 100%;
-  padding-top: 56.25%;
-  background: url("path/to/video_thumbnail.jpg") no-repeat center center;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
+  margin-top: 0;
 }
 
 .play-button {
@@ -70,6 +71,22 @@
   padding: 10px;
   color: white;
   cursor: pointer;
+}
+
+.profile-card {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.profile-image {
+  width: 100%;
+  height: auto;
+}
+
+.profile-details {
+  text-align: center;
 }
 
 /* Custom CSS */

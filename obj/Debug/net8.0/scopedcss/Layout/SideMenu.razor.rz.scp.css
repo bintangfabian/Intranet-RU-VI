@@ -35,7 +35,7 @@
 
 .announcement-list li a[b-60j33szu7j],
 .important-contacts li span[b-60j33szu7j] {
-  color: #333;
+  color: #a8db00;
   text-decoration: none;
 }
 
@@ -54,9 +54,10 @@
 .video-thumbnail[b-60j33szu7j] {
   position: relative;
   width: 100%;
-  padding-top: 56.25%;
-  background: url("path/to/video_thumbnail.jpg") no-repeat center center;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
+  margin-top: 0;
 }
 
 .play-button[b-60j33szu7j] {
@@ -70,6 +71,22 @@
   padding: 10px;
   color: white;
   cursor: pointer;
+}
+
+.profile-card[b-60j33szu7j] {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.profile-image[b-60j33szu7j] {
+  width: 100%;
+  height: auto;
+}
+
+.profile-details[b-60j33szu7j] {
+  text-align: center;
 }
 
 /* Custom CSS */
