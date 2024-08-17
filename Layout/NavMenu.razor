@@ -1,36 +1,99 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
+﻿<div class="d-flex justify-content-center">
+    @* <h1>hello word</h1> *@
+    <img src="logopertamina.png" alt="logo pertamina" class="my-5">
+</div>
+<nav class="navbar navbar-expand-lg navbar-light mb-5">
     <div class="container-fluid">
-        <a class="navbar-brand" href="">Intranet</a>
-        <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
+        <button class="navbar-toggler @NavButtonCssClass" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-label="Toggle navigation"
+            @onclick="ToggleNavMenu">
             <span class="navbar-toggler-icon"></span>
         </button>
-    </div>
-</div>
+        <div class="collapse navbar-collapse @NavBarCssClass" id="navbarCollapse" @onclick="ToggleNavMenu">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0 w-100">
+                <li class="nav-item">
+                    <NavLink class="nav-link me-4 fw-bold" href="" Match="NavLinkMatch.All">
+                        <span class="oi oi-home" aria-hidden="true">Home</span>
+                    </NavLink>
+                </li>
+                <li class="nav-item dropdown">
+                    <NavLink class="nav-link dropdown-toggle mx-4 fw-bold" href="counter" id="navbarDropdownMenuLink"
+                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Profil
+                    </NavLink>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="counter">Visi Misi</a></li>
+                        <li><a class="dropdown-item" href="home">Tata Nilai Akhlak</a></li>
+                        <li><a class="dropdown-item" href="home">Kebijakan</a></li>
+                        <li><a class="dropdown-item" href="home">Tujuan Dan Sasaran</a></li>
+                        <li><a class="dropdown-item" href="home">RJPP</a></li>
+                        <li><a class="dropdown-item" href="home">Sustainability Report</a></li>
+                        <li><a class="dropdown-item" href="home">Daftar Penghargaan</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <NavLink class="nav-link dropdown-toggle mx-4 fw-bold" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Menu Utama
+                    </NavLink>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="home">Pengumuman</a></li>
+                        <li><a class="dropdown-item" href="berita">Berita</a></li>
+                        <li><a class="dropdown-item" href="home">Klipping</a></li>
+                        <li><a class="dropdown-item" href="home">Foto Galeri</a></li>
+                        <li><a class="dropdown-item" href="home">Directory Telepon</a></li>
+                        <li><a class="dropdown-item" href="home">Pejabat Sementara (PJS)</a></li>
+                        <li><a class="dropdown-item" href="home">Forum</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <NavLink class="nav-link dropdown-toggle mx-4 fw-bold" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Web Application
+                    </NavLink>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="counter">Action</a></li>
+                        <li><a class="dropdown-item" href="home">Another action</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <NavLink class="nav-link dropdown-toggle mx-4 fw-bold" href="test" id="navbarDropdownMenuLink" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false" onclick="event.preventDefault();">
+                        Dashboard
+                    </NavLink>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="counter">Action</a></li>
+                        <li><a class="dropdown-item" href="home">Another action</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item ms-auto my-auto">
+                    <form class="d-flex search-form">
+                        <input class="form-control me-2 search-input border border-secondary" type="search" placeholder="Search"
+                            aria-label="Search">
+                        <button class="btn btn-outline-secondary search-btn border border-secondary" type="submit">
+                            <i class="fas fa-search text-dark"></i>
+                        </button>
+                    </form>
+                </li>
+                <li class="nav-item dropdown">
+                    <NavLink class="nav-link dropdown-toggle ms-5 me-3 fw-bold" href="#" id="navbarDropdownMenuLink"
+                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Bintang Fabian
+                    </NavLink>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
 
-<div class="@NavMenuCssClass nav-scrollable" @onclick="ToggleNavMenu">
-    <nav class="flex-column">
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Home
-            </NavLink>
-        </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="counter">
-                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Counter
-            </NavLink>
-        </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="weather">
-                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Weather
-            </NavLink>
-        </div>
-    </nav>
-</div>
+    </div>
+</nav>
 
 @code {
     private bool collapseNavMenu = true;
-
-    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+    private string? NavBarCssClass => collapseNavMenu ? null : "show";
+    private string? NavButtonCssClass => collapseNavMenu ? "collapsed" : null;
 
     private void ToggleNavMenu()
     {
