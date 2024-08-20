@@ -1,0 +1,145 @@
+@page "/forum"
+@inject NavigationManager Navigation
+
+<div class="container mt-4 px-4">
+    <h5 class="mb-4 fw-bold">FORUM ADA APA DENGAN KITA/A2DK</h5>
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <button class="btn btn-primary" @onclick="NavigateToCreateThread">Create New Thread +</button>
+        <div class="input-group w-25">
+            <input type="text" class="form-control" placeholder="Search" @bind="searchQuery" @oninput="SearchThread" />
+            <span class="input-group-text"><i class="bi bi-search"></i></span>
+        </div>
+    </div>
+    <!-- Your existing code for displaying forum threads goes here -->
+</div>
+
+    @foreach (var thread in filteredThreads)
+    {
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">@thread.Author</h5>
+                <h6 class="card-subtitle mb-2 text-primary">@thread.Title</h6>
+                <p class="card-text text-muted">@thread.PostDate.ToString("dd MMM yyyy")</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        @* <span><i class="bi bi-chat-dots me-1"></i> @thread.Replies Count Replies</span> *@
+                        <span class="ms-3"><i class="bi bi-eye me-1"></i> @thread.Views Views</span>
+                    </div>
+                    <div>
+                        <small class="text-muted">Last Post: by @thread.LastPostAuthor @thread.LastPostDate.ToString("dd MMM yyyy")</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+@code {
+    private string searchQuery = "";
+    private void NavigateToCreateThread()
+    {
+        Navigation.NavigateTo("/forum/create-thread");
+    }
+    private List<ForumThread> forumThreads = new List<ForumThread>
+    {
+        new ForumThread
+        {
+            Author = "Ahmad Sanusi",
+            Title = "Apa bedanya kerja sama pengangguran? coba ditebak dong dek",
+            PostDate = new DateTime(2024, 9, 27),
+            RepliesCount = 4,
+            Views = 200,
+            LastPostAuthor = "Rizki",
+            LastPostDate = new DateTime(2025, 12, 20)
+        },
+        new ForumThread
+        {
+            Author = "John Doe",
+            Title = "Bagaimana cara meningkatkan produktivitas kerja?",
+            PostDate = new DateTime(2024, 8, 15),
+            RepliesCount = 10,
+            Views = 500,
+            LastPostAuthor = "Jane Smith",
+            LastPostDate = new DateTime(2025, 1, 5)
+        },
+        new ForumThread
+        {
+            Author = "Siti Nurhaliza",
+            Title = "Tips dan trik untuk menghadapi wawancara kerja",
+            PostDate = new DateTime(2024, 10, 10),
+            RepliesCount = 8,
+            Views = 300,
+            LastPostAuthor = "Budi Santoso",
+            LastPostDate = new DateTime(2025, 2, 18)
+        },
+        new ForumThread
+        {
+            Author = "Rahmat Hidayat",
+            Title = "Apa tantangan terbesar dalam karir teknologi?",
+            PostDate = new DateTime(2024, 11, 5),
+            RepliesCount = 15,
+            Views = 450,
+            LastPostAuthor = "Fauzi Rahman",
+            LastPostDate = new DateTime(2025, 3, 10)
+        },
+        new ForumThread
+        {
+            Author = "Agus Wibowo",
+            Title = "Apa tantangan terbesar saat shift malam?",
+            PostDate = new DateTime(2024, 11, 5),
+            RepliesCount = 15,
+            Views = 450,
+            LastPostAuthor = "Rohman",
+            LastPostDate = new DateTime(2025, 3, 10)
+        },
+        new ForumThread
+        {
+            Author = "Toro Drajat",
+            Title = "shift pagi enaknya sarapan pake apa ya?",
+            PostDate = new DateTime(2024, 11, 5),
+            RepliesCount = 15,
+            Views = 450,
+            LastPostAuthor = "Jajat",
+            LastPostDate = new DateTime(2025, 3, 10)
+        },
+        new ForumThread
+        {
+            Author = "Topik Hidayat",
+            Title = "P cari Lawan badminton?",
+            PostDate = new DateTime(2024, 11, 5),
+            RepliesCount = 15,
+            Views = 450,
+            LastPostAuthor = "Rahman",
+            LastPostDate = new DateTime(2025, 3, 10)
+        }
+    };
+
+    private List<ForumThread> filteredThreads;
+
+    protected override void OnInitialized()
+    {
+        filteredThreads = forumThreads;
+    }
+
+    private void SearchThread()
+    {
+        if (string.IsNullOrWhiteSpace(searchQuery))
+        {
+            filteredThreads = forumThreads;
+        }
+        else
+        {
+            filteredThreads = forumThreads.Where(t => t.Title.Contains(searchQuery, StringComparison.OrdinalIgnoreCase)).ToList();
+        }
+    }
+
+    public class ForumThread
+    {
+        public string Author { get; set; }
+        public string Title { get; set; }
+        public DateTime PostDate { get; set; }
+        public int RepliesCount { get; set; }
+        public int Views { get; set; }
+        public string LastPostAuthor { get; set; }
+        public DateTime LastPostDate { get; set; }
+    }
+}

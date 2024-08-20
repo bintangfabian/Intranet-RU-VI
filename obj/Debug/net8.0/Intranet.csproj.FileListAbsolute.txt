@@ -2063,3 +2063,4 @@ C:\Users\ASUS\Intranet-RU-VI\obj\Debug\net8.0\Intranet.pdb
 C:\Users\ASUS\Intranet-RU-VI\obj\Debug\net8.0\ref\Intranet.dll
 C:\Users\ASUS\Intranet-RU-VI\obj\Debug\net8.0\scopedcss\Layout\SideMenu.razor.rz.scp.css
 C:\Users\ASUS\Intranet-RU-VI\obj\Debug\net8.0\scopedcss\Pages\Home.razor.rz.scp.css
+C:\Users\ASUS\Intranet-RU-VI\obj\Debug\net8.0\scopedcss\Pages\Berita.razor.rz.scp.css

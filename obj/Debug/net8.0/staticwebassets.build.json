@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "b2ILS4rufAW/NEHhyo39yPOy0pc5EJzgQChIZHZ3e9g=",
+  "Hash": "vyuXosCK9DKGPJZwo/+BnITPLhS89BgzFoHACgWHQms=",
   "Source": "Intranet",
   "BasePath": "/",
   "Mode": "Root",
@@ -7805,6 +7805,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\ASUS\\Intranet-RU-VI\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Intranet.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\ASUS\\Intranet-RU-VI\\wwwroot\\berita1.jpg",
+      "SourceId": "Intranet",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ASUS\\Intranet-RU-VI\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "berita1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\berita1.jpg"
     },
     {
       "Identity": "C:\\Users\\ASUS\\Intranet-RU-VI\\wwwroot\\cobacoba.jpg",

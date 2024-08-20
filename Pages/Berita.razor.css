@@ -1,0 +1,13 @@
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 0.9rem;
+}
+
+.card-img {
+  object-fit: cover;
+  height: 100%;
+}

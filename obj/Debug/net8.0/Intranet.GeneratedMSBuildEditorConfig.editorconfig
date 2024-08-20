@@ -30,16 +30,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XEZvb3Rlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/Intranet-RU-VI/Pages/Berita.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQmVyaXRhLnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/ASUS/Intranet-RU-VI/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/ASUS/Intranet-RU-VI/Pages/Dashboard.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGFzaGJvYXJkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/Intranet-RU-VI/Pages/Forum.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9ydW0ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/ASUS/Intranet-RU-VI/Pages/MenuUtama.razor]
@@ -73,6 +73,10 @@ build_metadata.AdditionalFiles.CssScope = b-cvhkh149jr
 [C:/Users/ASUS/Intranet-RU-VI/Layout/SideMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XFNpZGVNZW51LnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-60j33szu7j
+
+[C:/Users/ASUS/Intranet-RU-VI/Pages/Berita.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQmVyaXRhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-s9nymfvuqn
 
 [C:/Users/ASUS/Intranet-RU-VI/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==

@@ -335,6 +335,20 @@ ul.navbar-nav.mb-2.mb-md-0.mx-5[b-cvhkh149jr] {
 .btn-selengkapnya:hover {
   background-color: #0056b3;
 } */
+/* /Pages/Berita.razor.rz.scp.css */
+.card-title[b-s9nymfvuqn] {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.card-text[b-s9nymfvuqn] {
+  font-size: 0.9rem;
+}
+
+.card-img[b-s9nymfvuqn] {
+  object-fit: cover;
+  height: 100%;
+}
 /* /Pages/Home.razor.rz.scp.css */
 .list-group-item[b-jem09xfzag] {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
