@@ -93,6 +93,30 @@
       "PackagePath": "staticwebassets\\index.html"
     },
     {
+      "Id": "C:\\Users\\ASUS\\Intranet-RU-VI\\wwwroot\\isiberita.jpg",
+      "PackagePath": "staticwebassets\\isiberita.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ASUS\\Intranet-RU-VI\\wwwroot\\isifoto.jpg",
+      "PackagePath": "staticwebassets\\isifoto.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ASUS\\Intranet-RU-VI\\wwwroot\\isifoto1.jpg",
+      "PackagePath": "staticwebassets\\isifoto1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ASUS\\Intranet-RU-VI\\wwwroot\\isifoto2.jpg",
+      "PackagePath": "staticwebassets\\isifoto2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ASUS\\Intranet-RU-VI\\wwwroot\\isifoto3.jpg",
+      "PackagePath": "staticwebassets\\isifoto3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ASUS\\Intranet-RU-VI\\wwwroot\\isifoto4.jpg",
+      "PackagePath": "staticwebassets\\isifoto4.jpg"
+    },
+    {
       "Id": "C:\\Users\\ASUS\\Intranet-RU-VI\\wwwroot\\logopertamina.png",
       "PackagePath": "staticwebassets\\logopertamina.png"
     },

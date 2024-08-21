@@ -1,0 +1,108 @@
+@page "/pejabat-sementara"
+
+<div class="container mt-5">
+    <h5 class="fw-bold">PEJABAT SEMENTARA</h5>
+    
+    <div class="row mb-3">
+        <div class="col-md-3">
+            <label for="bagianSelect" class="form-label">Periode Jabatan</label>
+            <select id="bagianSelect" class="form-select" @bind="selectedBagian">
+                <option>Pilih Tahun</option>
+                @foreach (var bagian in bagianList)
+                {
+                    <option>@bagian</option>
+                }
+            </select>
+        </div>
+        @* <div class="col-md-3">
+            <label for="fungsiSelect" class="form-label">Fungsi</label>
+            <select id="fungsiSelect" class="form-select" @bind="selectedFungsi">
+                <option>Pilih Fungsi</option>
+                @foreach (var fungsi in fungsiList)
+                {
+                    <option>@fungsi</option>
+                }
+            </select>
+        </div> *@
+        
+            <div class="col-md-4">
+                <label for="searchInput" class="form-label">No. Pekerja / Nama</label>
+                <input id="searchInput" type="text" class="form-control" @bind="searchTerm" placeholder="No. Pekerja / Nama">
+            </div>
+            <div class="col-md-2 d-flex align-items-end">
+                <button class="btn btn-primary" @onclick="Search">Search</button>
+            </div>
+        
+    </div>
+    
+    <table class="table table-bordered">
+        <thead class="bg-primary text-white">
+            <tr>
+                <th>No</th>
+                <th>N0 Pekerja</th>
+                <th>Nama</th>
+                <th>Jabatan Sementara</th>
+                <th>Periode Jabatan</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var pekerja in filteredData)
+            {
+                <tr>
+                    <td>@pekerja.No</td>
+                    <td>@pekerja.NoPekerja</td>
+                    <td>@pekerja.Nama</td>
+                    <td>@pekerja.JabatanSementara</td>
+                    <td>@pekerja.PeriodeJabatan</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@code {
+    // Data Model
+    public class Pekerja
+    {
+        public int No { get; set; }
+        public string NoPekerja { get; set; }
+        public string Nama { get; set; }
+        public string JabatanSementara { get; set; }
+        public string PeriodeJabatan { get; set; }
+        public string Bagian { get; set; }
+    }
+
+    // Dummy Data
+    private List<Pekerja> pekerjaList = new List<Pekerja>
+    {
+        new Pekerja { No = 1, NoPekerja = "EMP001", Nama = "Ahmad Suryana", JabatanSementara = "Manager IT", PeriodeJabatan = "2018 - 2024" },
+            new Pekerja { No = 2, NoPekerja = "EMP002", Nama = "Budi Santoso", JabatanSementara = "Staff HRD", PeriodeJabatan = "2020 - 2023" },
+            new Pekerja { No = 3, NoPekerja = "EMP003", Nama = "Citra Maharani", JabatanSementara = "Kepala Gudang", PeriodeJabatan = "2021 - 2024" },
+            new Pekerja { No = 4, NoPekerja = "EMP004", Nama = "Dewi Kartika", JabatanSementara = "Supervisor Produksi", PeriodeJabatan = "2017 - 2025" },
+            new Pekerja { No = 5, NoPekerja = "EMP005", Nama = "Eko Prasetyo", JabatanSementara = "Marketing", PeriodeJabatan = "2019 - 2024" }
+    };
+
+    private List<Pekerja> filteredData;
+
+    // Dropdown List Data
+    private List<string> bagianList = new List<string> { "2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025"};
+    @* private List<string> fungsiList = new List<string> { "Pengembangan", "Keuangan", "Support", "Kesehatan", "Barang", "Maintenance" }; *@
+
+    private string selectedBagian;
+    private string selectedFungsi;
+    private string searchTerm;
+
+    protected override void OnInitialized()
+    {
+        filteredData = pekerjaList;
+    }
+
+    private void Search()
+    {
+        filteredData = pekerjaList.Where(p =>
+            (string.IsNullOrEmpty(selectedBagian) || p.Bagian == selectedBagian) &&
+            @* (string.IsNullOrEmpty(selectedFungsi) || p.Fungsi == selectedFungsi) && *@
+            (string.IsNullOrEmpty(searchTerm) || p.NoPekerja.Contains(searchTerm, StringComparison.OrdinalIgnoreCase) || p.Nama.Contains(searchTerm, StringComparison.OrdinalIgnoreCase))
+        ).ToList();
+    }
+}

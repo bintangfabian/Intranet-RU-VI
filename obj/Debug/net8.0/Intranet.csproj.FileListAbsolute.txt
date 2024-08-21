@@ -1849,7 +1849,6 @@ C:\Users\ASUS\Intranet-RU-VI\obj\Debug\net8.0\staticwebassets\msbuild.buildMulti
 C:\Users\ASUS\Intranet-RU-VI\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Intranet.props
 C:\Users\ASUS\Intranet-RU-VI\obj\Debug\net8.0\staticwebassets.pack.json
 C:\Users\ASUS\Intranet-RU-VI\obj\Debug\net8.0\scopedcss\Layout\MainLayout.razor.rz.scp.css
-C:\Users\ASUS\Intranet-RU-VI\obj\Debug\net8.0\scopedcss\Layout\NavMenu.razor.rz.scp.css
 C:\Users\ASUS\Intranet-RU-VI\obj\Debug\net8.0\scopedcss\bundle\Intranet.styles.css
 C:\Users\ASUS\Intranet-RU-VI\obj\Debug\net8.0\scopedcss\projectbundle\Intranet.bundle.scp.css
 C:\Users\ASUS\Intranet-RU-VI\obj\Debug\net8.0\compressed\00j3uxougx.gz

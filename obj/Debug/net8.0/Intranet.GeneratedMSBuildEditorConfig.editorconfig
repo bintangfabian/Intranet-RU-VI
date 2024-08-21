@@ -30,20 +30,48 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XEZvb3Rlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/ASUS/Intranet-RU-VI/Layout/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/ASUS/Intranet-RU-VI/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/Intranet-RU-VI/Pages/CreateForum.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3JlYXRlRm9ydW0ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/ASUS/Intranet-RU-VI/Pages/Dashboard.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGFzaGJvYXJkLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/ASUS/Intranet-RU-VI/Pages/DirektoriTelfon.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlyZWt0b3JpVGVsZm9uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/ASUS/Intranet-RU-VI/Pages/Forum.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9ydW0ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/ASUS/Intranet-RU-VI/Pages/FotoTerkini.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm90b1RlcmtpbmkucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/Intranet-RU-VI/Pages/IsiBerita.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSXNpQmVyaXRhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/Intranet-RU-VI/Pages/IsiFotoTerkini.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSXNpRm90b1RlcmtpbmkucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/ASUS/Intranet-RU-VI/Pages/MenuUtama.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVudVV0YW1hLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/Intranet-RU-VI/Pages/PejabatSementara.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVqYWJhdFNlbWVudGFyYS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/ASUS/Intranet-RU-VI/Pages/Profil.razor]
@@ -65,10 +93,6 @@ build_metadata.AdditionalFiles.CssScope =
 [C:/Users/ASUS/Intranet-RU-VI/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-y8m823vmob
-
-[C:/Users/ASUS/Intranet-RU-VI/Layout/NavMenu.razor]
-build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE5hdk1lbnUucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-cvhkh149jr
 
 [C:/Users/ASUS/Intranet-RU-VI/Layout/SideMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XFNpZGVNZW51LnJhem9y

@@ -1,0 +1,122 @@
+@page "/direktori-telfon"
+
+<div class="container mt-5">
+    <h5 class="fw-bold">DIREKTORI TELEPON</h5>
+    
+    <div class="row mb-3">
+        <div class="col-md-3">
+            <label for="bagianSelect" class="form-label">Bagian</label>
+            <select id="bagianSelect" class="form-select" @bind="selectedBagian">
+                <option>Pilih Bagian</option>
+                @foreach (var bagian in bagianList)
+                {
+                    <option>@bagian</option>
+                }
+            </select>
+        </div>
+        <div class="col-md-3">
+            <label for="fungsiSelect" class="form-label">Fungsi</label>
+            <select id="fungsiSelect" class="form-select" @bind="selectedFungsi">
+                <option>Pilih Fungsi</option>
+                @foreach (var fungsi in fungsiList)
+                {
+                    <option>@fungsi</option>
+                }
+            </select>
+        </div>
+        <div class="col-md-4">
+            <label for="searchInput" class="form-label">No. Pekerja / Nama</label>
+            <input id="searchInput" type="text" class="form-control" @bind="searchTerm" placeholder="No. Pekerja / Nama">
+        </div>
+        <div class="col-md-2 d-flex align-items-end">
+            <button class="btn btn-primary" @onclick="Search">Search</button>
+        </div>
+    </div>
+    
+    <table class="table table-bordered">
+        <thead class="bg-primary text-white">
+            <tr>
+                <th>No</th>
+                <th>Nama</th>
+                <th>No Pekerja</th>
+                <th>Jabatan</th>
+                <th>Bagian</th>
+                <th>Fungsi</th>
+                <th>Telepon Kantor</th>
+                <th>Telepon Rumah</th>
+                <th>HP</th>
+                <th>Alamat</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var pekerja in filteredData)
+            {
+                <tr>
+                    <td>@pekerja.No</td>
+                    <td>@pekerja.Nama</td>
+                    <td>@pekerja.NoPekerja</td>
+                    <td>@pekerja.Jabatan</td>
+                    <td>@pekerja.Bagian</td>
+                    <td>@pekerja.Fungsi</td>
+                    <td>@pekerja.TeleponKantor</td>
+                    <td>@pekerja.TeleponRumah</td>
+                    <td>@pekerja.HP</td>
+                    <td>@pekerja.Alamat</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@code {
+    // Data Model
+    public class Pekerja
+    {
+        public int No { get; set; }
+        public string Nama { get; set; }
+        public string NoPekerja { get; set; }
+        public string Jabatan { get; set; }
+        public string Bagian { get; set; }
+        public string Fungsi { get; set; }
+        public string TeleponKantor { get; set; }
+        public string TeleponRumah { get; set; }
+        public string HP { get; set; }
+        public string Alamat { get; set; }
+    }
+
+    // Dummy Data
+    private List<Pekerja> pekerjaList = new List<Pekerja>
+    {
+        new Pekerja { No = 1, Nama = "Andi", NoPekerja = "001", Jabatan = "Manager", Bagian = "HRD", Fungsi = "Pengembangan", TeleponKantor = "021-123456", TeleponRumah = "021-654321", HP = "08123456789", Alamat = "Jl. Mawar No. 1" },
+        new Pekerja { No = 2, Nama = "Budi", NoPekerja = "002", Jabatan = "Staff", Bagian = "Finance", Fungsi = "Keuangan", TeleponKantor = "021-234567", TeleponRumah = "021-765432", HP = "08134567890", Alamat = "Jl. Melati No. 2" },
+        new Pekerja { No = 3, Nama = "Citra", NoPekerja = "003", Jabatan = "Supervisor", Bagian = "Logistic", Fungsi = "Support", TeleponKantor = "021-345678", TeleponRumah = "021-876543", HP = "08145678901", Alamat = "Jl. Anggrek No. 3" },
+        new Pekerja { No = 3, Nama = "Bismil", NoPekerja = "004", Jabatan = "CCTV", Bagian = "IT", Fungsi = "Maintenence", TeleponKantor = "021-345669", TeleponRumah = "021-896543", HP = "08145678910", Alamat = "Jl. Cempaka No. 9" },
+        new Pekerja { No = 3, Nama = "Anugrah", NoPekerja = "005", Jabatan = "Gudang", Bagian = "Logistic", Fungsi = "Barang", TeleponKantor = "021-345672", TeleponRumah = "021-836543", HP = "08145672401", Alamat = "Jl. Mawar No. 14" },
+        new Pekerja { No = 3, Nama = "Arvi", NoPekerja = "006", Jabatan = "Head", Bagian = "HSSE", Fungsi = "Kesehatan", TeleponKantor = "021-345610", TeleponRumah = "021-776543", HP = "08145678998", Alamat = "Jl. Mangga No. 33" },
+        new Pekerja { No = 3, Nama = "Lalan", NoPekerja = "007", Jabatan = "CCTV", Bagian = "IT", Fungsi = "Maintenence", TeleponKantor = "021-345679", TeleponRumah = "021-376543", HP = "08145678910", Alamat = "Jl. Kalimantan No. 29" },
+    };
+
+    private List<Pekerja> filteredData;
+
+    // Dropdown List Data
+    private List<string> bagianList = new List<string> { "HRD", "Finance", "IT", "HSSE", "Logistic", "Organic"};
+    private List<string> fungsiList = new List<string> { "Pengembangan", "Keuangan", "Support", "Kesehatan", "Barang", "Maintenance" };
+
+    private string selectedBagian;
+    private string selectedFungsi;
+    private string searchTerm;
+
+    protected override void OnInitialized()
+    {
+        filteredData = pekerjaList;
+    }
+
+    private void Search()
+    {
+        filteredData = pekerjaList.Where(p =>
+            (string.IsNullOrEmpty(selectedBagian) || p.Bagian == selectedBagian) &&
+            (string.IsNullOrEmpty(selectedFungsi) || p.Fungsi == selectedFungsi) &&
+            (string.IsNullOrEmpty(searchTerm) || p.NoPekerja.Contains(searchTerm, StringComparison.OrdinalIgnoreCase) || p.Nama.Contains(searchTerm, StringComparison.OrdinalIgnoreCase))
+        ).ToList();
+    }
+}
